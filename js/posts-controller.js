@@ -13,6 +13,5 @@ function renderPosts(){
             </div>
         </section>`
     }).join('');
-    console.log(strHTMLs);
     document.querySelector('.card-container').innerHTML = strHTMLs;
 }

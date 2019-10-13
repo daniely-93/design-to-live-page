@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="screen" onclick="toggleMenu()"></div>
+    <header class="main-container">
+        <section class="main-header flex space-between container">
+            <div class="logo">Blogin<span class="text-green">.</span></div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="main-nav flex clean-list">
+                <li class="nav-item active"><a href="#">Journal</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Work</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </section>
+    </header>
+    <main class="card-container container">
+        <section class="card flex">
+            <img class="card-img" src="img/1.jpg" alt="" />
+            <div class="card-content space-between flex">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <div class="card-text">
+
+                    <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button class="card-continue-btn" type="button">Continue Reading</button>
+            </div>
+        </section>
+        <section class="card flex">
+            <img class="card-img" src="img/2.jpg" alt="" />
+            <div class="card-content space-between flex wrap">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...</p>
+                <button class="card-continue-btn" type="button">Continue Reading</button>
+            </div>
+        </section>
+        <section class="card flex">
+            <img class="card-img" src="img/3.jpg" alt="" />
+            <div class="card-content space-between flex wrap">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...</p>
+                <button class="card-continue-btn" type="button">Continue Reading</button>
+            </div>
+        </section>
+        <section class="nav-container space-between flex">
+            <button class="btn" type="button">← Previous</button>
+            <button class="btn" type="button">Next →</button>
+        </section>
+    </main>
+    <footer class="footer flex">
+        <h2 class="footer-title">Blogin<span class="text-green">.</span></h2>
+        <p class="footer-text">© 2014 Blogim.com - All Rights Reserved . Find more free Templates at
+            <strong>Pixelhint.com</strong></p>
+        <div class="social-btns">
+            <button class="social-btn fb" type="button"><i class="fa fa-facebook-f"></i></button>
+            <button class="social-btn tw" type="button"><i class="fa fa-twitter"></i></button>
+            <button class="social-btn" type="button">Be</button>
+            <button class="social-btn" type="button">O</button>
+        </div>
+    </footer>
+    <script>
+        var elNav = document.querySelector('.main-nav');
+        function toggleMenu() {
+            document.body.classList.toggle('open-menu');
+        }
+    </script>
+</body>
+
+</html>

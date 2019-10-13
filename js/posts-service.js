@@ -37,6 +37,11 @@ function createPost(imgUrl, title, text1, text2) {
     }
 }
 
+function addPost(imgUrl, title, text1, text2){
+    gPosts.unshift(createPost(imgUrl, title, text1, text2));
+    savePostsToStorage();
+}
+
 function getPosts() {
     var postsStorage = loadPostsFromStrorage();
     return postsStorage ? postsStorage : gPosts;
@@ -47,5 +52,5 @@ function loadPostsFromStrorage() {
 }
 
 function savePostsToStorage() {
-    saveToStorage(POSTS_KEY, getPosts());
+    saveToStorage(POSTS_KEY, gPosts);
 }

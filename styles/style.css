@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     /* margin-right: 260px;
     margin-left: 260px; */
     margin: 0 16.25rem;
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .logo {
@@ -276,13 +276,79 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----list helpers-----*/
 
+.btn-new{
+    margin: 10px 5;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.btn-success:hover {
+    background-color: #19682b;
+}
+
 .clean-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-/*----Meida Query----*/
+.modal-content {
+    z-index: 1;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: relative;
+}
+
+/*----Media Query----*/
 
 @media only screen and (max-width: 1250px) {
     .main-header {
@@ -318,16 +384,13 @@ h1, h2, h3, h4, h5, h6 {
     .open-menu .main-nav {
         transform: translate(0, 0);
     }
-
-    .nav-item{
+    .nav-item {
         background-color: rgba(100, 100, 100, 0.377);
         width: 90% !important;
     }
-
     .menu-btn {
         display: block;
     }
-
     .card:first-child {
         padding-top: 15px;
     }
